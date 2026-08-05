@@ -14,6 +14,7 @@ import animationData from "../animations/typing.json";
 
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
+import { ChatState } from "../Context/ChatProvider";
 const ENDPOINT = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 var socket, selectedChatCompare;
 
