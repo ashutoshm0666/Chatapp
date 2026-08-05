@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import ChatProvider from "./Context/ChatProvider";
 import { BrowserRouter } from "react-router-dom";
+import axios from "axios";
+
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
 ReactDOM.render(
   <ChakraProvider>
