@@ -88,3 +88,5 @@ io.on("connection", (socket) => {
     console.log("USER DISCONNECTED");
   });
 });
+
+module.exports = app;
